@@ -24,7 +24,7 @@
 - [ ] My code follows the code style of this project.
 - [ ] My change requires a change to the documentation.
 - [ ] I have updated the documentation accordingly.
-- [ ] I have read the [**CONTRIBUTING**](https://github.com/ITZSHOAIB/hashtegrity/blob/master/.github/CONTRIBUTING.md) document.
+- [ ] I have read the [**CONTRIBUTING**](https://github.com/ITZSHOAIB/agentic-express/blob/main/.github/CONTRIBUTING.md) document.
 - [ ] I have included a **changeset** according to the type of my changes
 - [ ] I have added tests to cover my changes.
 - [ ] All new and existing tests passed.

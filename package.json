@@ -1,7 +1,7 @@
 {
   "name": "agentic-express",
   "version": "0.0.0",
-  "description": "A simple express utility for Agentic apps",
+  "description": "A library to accelerate REST agent app development on top of Express, enabling users to focus on Langgraph agent development.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "exports": {
