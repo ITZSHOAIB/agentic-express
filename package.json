@@ -58,7 +58,17 @@
       "optional": true
     }
   },
-  "keywords": ["typescript", "library", "starter", "template", "npm", "biome"],
+  "keywords": [
+    "agent",
+    "agentic",
+    "express",
+    "rest",
+    "api",
+    "langgraph",
+    "langchain",
+    "agentic-ai",
+    "agentic-framework"
+  ],
   "author": "Sohab Sk",
   "license": "MIT",
   "repository": {
