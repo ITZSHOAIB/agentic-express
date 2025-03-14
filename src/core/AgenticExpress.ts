@@ -5,17 +5,37 @@ export type SendDataType = {
   content?: unknown;
 };
 
+/**
+ * Configuration options for AgenticExpress
+ * @type Check Here - {@link AgenticExpressConfig}
+ */
 export type AgenticExpressConfig = {
+  /**
+   * Base URL path for agent stream endpoints
+   * @default "/agent"
+   */
   basePath?: string;
+  /**
+   * Function that generates an async stream of agent responses from a user prompt.
+   * Typically this is your AsyncGenerator function with LangGraph graph.stream() implementation.
+   */
   graphStream(prompt: string): AsyncGenerator<unknown, void, unknown>;
 };
 
+/**
+ * AgenticExpress - Main class for setting up agentic routes with Express
+ * It utilized Server-Sent Events (SSE) to stream agent responses to the client.
+ *
+ *
+ * @param {AgenticExpressConfig} {@link AgenticExpressConfig} - Configuration options for AgenticExpress
+ */
 export class AgenticExpress {
   private basePath: string;
-  private streamPath: string;
   private graphStream: (
     prompt: string,
   ) => AsyncGenerator<unknown, void, unknown>;
+
+  private streamPath: string;
   private activeSessions = new Map<string, { res: Response }>();
 
   constructor({ basePath, graphStream }: AgenticExpressConfig) {
@@ -24,6 +44,15 @@ export class AgenticExpress {
     this.graphStream = graphStream;
   }
 
+  /**
+   * Setup the agent endpoints with Express Router
+   *
+   * The agent endpoints include: (default basePath: `/agent`)
+   * - GET `{basePath}/stream/:sessionId` - Stream endpoint for agent responses
+   * - POST `{basePath}/stream/:sessionId` - Endpoint to send user prompts to the agent
+   *
+   * @returns {Router} {@link Router} - Express Router with agent endpoints
+   */
   setup(): Router {
     console.log("Setting up the agent...");
     console.log("Base path:", this.basePath);
