@@ -1,5 +1,11 @@
 # agentic-express
 
+## 0.0.2
+
+### Patch Changes
+
+- [#8](https://github.com/ITZSHOAIB/agentic-express/pull/8) [`735c8de`](https://github.com/ITZSHOAIB/agentic-express/commit/735c8de928a38600f5cdb4c0bbe12c6aff202f25) Thanks [@ITZSHOAIB](https://github.com/ITZSHOAIB)! - fix: esm issue resolved
+
 ## 0.0.1
 
 ### Patch Changes
