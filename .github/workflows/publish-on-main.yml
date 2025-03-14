@@ -10,15 +10,11 @@ concurrency:
 
 jobs:
   checks:
-    # Remove this line to enable the job
-    if: ${{ false }}
     name: Checks
     uses: ./.github/workflows/pre-checks.yml
     secrets: inherit
 
   publish:
-    # Remove this line to enable the job
-    if: ${{ false }} 
     name: Publish
     needs: checks
     runs-on: ubuntu-latest

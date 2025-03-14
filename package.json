@@ -1,7 +1,7 @@
 {
-  "name": "typescript-library-starter",
+  "name": "agentic-express",
   "version": "0.0.0",
-  "description": "A starter template for TypeScript libraries ready to be published to npm.",
+  "description": "A simple express utility for Agentic apps",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "exports": {
@@ -28,12 +28,19 @@
     "test:watch": "vitest --watch",
     "test:coverage": "vitest run --coverage"
   },
+  "dependencies": {
+    "@langchain/core": "^0.3.42",
+    "@langchain/mistralai": "^0.2.0",
+    "@langchain/openai": "^0.4.4"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.10",
+    "@types/express": "^5.0.0",
     "@types/node": "^22.10.1",
     "@vitest/coverage-v8": "2.1.5",
+    "express": "^4.21.2",
     "lint-staged": "^15.2.10",
     "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.11.1",
@@ -43,6 +50,7 @@
     "vitest": "^2.1.5"
   },
   "peerDependencies": {
+    "express": ">=4.17.0",
     "typescript": ">=5.0.4"
   },
   "peerDependenciesMeta": {
@@ -54,7 +62,7 @@
   "author": "Sohab Sk",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/ITZSHOAIB/typescript-library-starter"
+    "url": "https://github.com/ITZSHOAIB/agentic-express"
   },
   "publishConfig": {
     "access": "public"
