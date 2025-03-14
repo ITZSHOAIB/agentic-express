@@ -51,14 +51,14 @@ export class AgenticExpress {
    * - GET `{basePath}/stream/:sessionId` - Stream endpoint for agent responses
    * - POST `{basePath}/stream/:sessionId` - Endpoint to send user prompts to the agent
    *
-   * @returns {Router} {@link Router} - Express Router with agent endpoints
+   * @returns {Promise<Router>} {@link Router} - Express Router with agent endpoints
    */
-  setup(): Router {
+  async setup(): Promise<Router> {
     console.log("Setting up the agent...");
     console.log("Base path:", this.basePath);
 
-    const express = require("express");
-    const router = express.Router();
+    const expressModule = await import("express");
+    const router = expressModule.default.Router();
 
     router.get(this.streamPath, this.streamConnection.bind(this));
     router.post(this.streamPath, this.handleStreamMessage.bind(this));

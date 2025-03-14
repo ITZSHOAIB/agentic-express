@@ -31,12 +31,12 @@ import { AgenticExpress } from 'agentic-express';
 const app = express();
 
 // Set up the app with Agentic Express middleware
-const agenticExpressMiddleware = new AgenticExpress({
+const agenticExpress = new AgenticExpress({
   graphStream: invokeGraph,
-}).setup();
+});
 
 // Add the middleware to the express app
-app.use("/", agenticExpressMiddleware);
+router.use(await agenticExpress.setup());
 
 // Start the server
 app.listen(3000, () => {
