@@ -1,5 +1,11 @@
 # agentic-express
 
+## 0.0.4
+
+### Patch Changes
+
+- [`25172bc`](https://github.com/ITZSHOAIB/agentic-express/commit/25172bc1d70a30ee78f83338004c932160b3248d) Thanks [@ITZSHOAIB](https://github.com/ITZSHOAIB)! - fix: AgenticExpress class with fixed graphStream method
+
 ## 0.0.3
 
 ### Patch Changes

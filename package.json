@@ -1,6 +1,6 @@
 {
   "name": "agentic-express",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A library to accelerate REST agent app development on top of Express, enabling users to focus on Langgraph agent development.",
   "main": "dist/index.js",
   "module": "dist/index.js",
