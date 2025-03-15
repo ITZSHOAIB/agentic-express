@@ -4,14 +4,14 @@
   "description": "A library to accelerate REST agent app development on top of Express, enabling users to focus on Langgraph agent development.",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "bin": {
-    "agentic-express": "dist/cli/index.js"
-  },
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
+  },
+  "bin": {
+    "agentic-express": "dist/cli/index.js"
   },
   "types": "dist/index.d.ts",
   "type": "module",

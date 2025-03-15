@@ -8,9 +8,21 @@ Agentic Express is a TypeScript-based npm package designed to accelerate REST ag
 - **TypeScript Support**: Fully typed for safer and more predictable development.
 - **Scalable Patterns**: Encourages best practices for building scalable and maintainable applications.
 
+## Initialize an Agentic Express App ♨️
+
+You can quickly scaffold a new Agentic Express app using the CLI:
+
+```bash
+npx agentic-express init
+# or
+pnpm dlx agentic-express init
+# or
+yarn dlx agentic-express init
+```
+
 ## ⚒️ Installation
 
-Install the package via npm or yarn:
+Install the package via npm or yarn or pnpm:
 
 ```bash
 pnpm add agentic-express
