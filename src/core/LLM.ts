@@ -1,8 +1,5 @@
-import {
-  ChatMistralAI,
-  type ChatMistralAICallOptions,
-} from "@langchain/mistralai";
-import { ChatOpenAI, type ChatOpenAICallOptions } from "@langchain/openai";
+import { ChatMistralAI, type ChatMistralAIInput } from "@langchain/mistralai";
+import { ChatOpenAI, type OpenAIChatInput } from "@langchain/openai";
 
 /**
  * Enum for supported LLM providers
@@ -21,9 +18,9 @@ export interface LLMConfig {
   provider: LLMProviders;
   /**
    * Options for the LLM provider
-   * [{@link ChatOpenAICallOptions}, {@link ChatMistralAICallOptions}]
+   * [{@link OpenAIChatInput}, {@link ChatMistralAIInput}]
    */
-  options: ChatOpenAICallOptions | ChatMistralAICallOptions;
+  options: Partial<OpenAIChatInput> | ChatMistralAIInput;
 }
 
 /**

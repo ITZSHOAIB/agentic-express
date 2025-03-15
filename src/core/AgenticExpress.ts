@@ -33,6 +33,7 @@ export class AgenticExpress {
   private basePath: string;
   private graphStream: (
     prompt: string,
+    sessionId: string,
   ) => AsyncGenerator<unknown, void, unknown>;
 
   private streamPath: string;
@@ -97,7 +98,7 @@ export class AgenticExpress {
     }
 
     try {
-      for await (const response of this.graphStream(message)) {
+      for await (const response of this.graphStream(message, sessionId)) {
         if (response) {
           this.sendEvent(session.res, { type: "agent", content: response });
         }
