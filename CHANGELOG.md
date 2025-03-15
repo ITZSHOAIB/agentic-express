@@ -1,5 +1,11 @@
 # agentic-express
 
+## 0.0.3
+
+### Patch Changes
+
+- [#10](https://github.com/ITZSHOAIB/agentic-express/pull/10) [`d9bddd2`](https://github.com/ITZSHOAIB/agentic-express/commit/d9bddd2c18703ee8f0170169e2af158f8da845fc) Thanks [@ITZSHOAIB](https://github.com/ITZSHOAIB)! - fix: LLM types updated and graphStream has sessionId in AgenticExpress setup
+
 ## 0.0.2
 
 ### Patch Changes
