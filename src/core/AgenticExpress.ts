@@ -19,7 +19,10 @@ export type AgenticExpressConfig = {
    * Function that generates an async stream of agent responses from a user prompt.
    * Typically this is your AsyncGenerator function with LangGraph graph.stream() implementation.
    */
-  graphStream(prompt: string): AsyncGenerator<unknown, void, unknown>;
+  graphStream(
+    prompt: string,
+    sessionId: string,
+  ): AsyncGenerator<unknown, void, unknown>;
 };
 
 /**
