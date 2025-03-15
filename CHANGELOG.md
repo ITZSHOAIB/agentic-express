@@ -1,5 +1,11 @@
 # agentic-express
 
+## 0.0.5
+
+### Patch Changes
+
+- [#13](https://github.com/ITZSHOAIB/agentic-express/pull/13) [`3c520ce`](https://github.com/ITZSHOAIB/agentic-express/commit/3c520ced29cfa13851a4ca5907256766ff4d350b) Thanks [@ITZSHOAIB](https://github.com/ITZSHOAIB)! - feat: add CLI initialization command for Agentic Express project
+
 ## 0.0.4
 
 ### Patch Changes
