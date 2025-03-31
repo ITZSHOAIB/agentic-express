@@ -35,7 +35,7 @@
     "@clack/prompts": "^0.10.0",
     "@langchain/core": "^0.3.42",
     "@langchain/mistralai": "^0.2.0",
-    "@langchain/openai": "^0.4.4",
+    "@langchain/openai": "^0.5.2",
     "fs-extra": "^11.3.0",
     "yargs": "^17.7.2"
   },
