@@ -48,7 +48,7 @@
     "@types/node": "^22.10.1",
     "@types/yargs": "^17.0.33",
     "@vitest/coverage-v8": "2.1.5",
-    "express": "^4.21.2",
+    "express": "^5.1.0",
     "lint-staged": "^15.5.0",
     "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.11.1",
